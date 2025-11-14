@@ -1,23 +1,30 @@
 package com.example.householdbook.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException; // 追加
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.ExceptionHandler; // 追加
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.householdbook.entity.Expense;
 import com.example.householdbook.service.ExpenseService;
 
+import jakarta.validation.Valid; // 追加
+
 @RestController
-@RequestMapping("/api/expenses") // 全てのエンドポイントのベースパス
+@RequestMapping("/api/expenses")
 public class ExpenseController {
 
     private final ExpenseService expenseService;
@@ -28,7 +35,7 @@ public class ExpenseController {
 
     // CREATE: 新しい家計簿データを追加
     @PostMapping
-    public ResponseEntity<Expense> createExpense(@RequestBody Expense expense) {
+    public ResponseEntity<Expense> createExpense(@Valid @RequestBody Expense expense) { // @Valid を追加
 	Expense savedExpense = expenseService.saveExpense(expense);
 	return new ResponseEntity<>(savedExpense, HttpStatus.CREATED);
     }
@@ -49,7 +56,7 @@ public class ExpenseController {
 
     // UPDATE: 特定のIDの家計簿データを更新
     @PutMapping("/{id}")
-    public ResponseEntity<Expense> updateExpense(@PathVariable Long id, @RequestBody Expense expense) {
+    public ResponseEntity<Expense> updateExpense(@PathVariable Long id, @Valid @RequestBody Expense expense) { // @Validを追加
 	return expenseService.updateExpense(id, expense)
 		.map(updatedExpense -> new ResponseEntity<>(updatedExpense, HttpStatus.OK))
 		.orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
@@ -64,5 +71,18 @@ public class ExpenseController {
 	} else {
 	    return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
+    }
+
+    // バリデーションエラーハンドリング
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public Map<String, String> handleValidationExceptions(MethodArgumentNotValidException ex) {
+	Map<String, String> errors = new HashMap<>();
+	ex.getBindingResult().getAllErrors().forEach(error -> {
+	    String fieldName = ((org.springframework.validation.FieldError) error).getField();
+	    String errorMessage = error.getDefaultMessage();
+	    errors.put(fieldName, errorMessage);
+	});
+	return errors;
     }
 }

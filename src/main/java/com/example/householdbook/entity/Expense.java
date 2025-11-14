@@ -9,95 +9,49 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.Digits;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "EXPENSE") // Oracleのテーブル名に合わせて
+@Table(name = "EXPENSE")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Expense {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // Oracle 12c以降のIDENTITYカラム用
-
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotNull(message = "日付は必須です")
     @Column(name = "transaction_date", nullable = false)
     private LocalDate transactionDate;
 
+    @NotBlank(message = "説明は必須です")
+    @Size(max = 255, message = "説明は255文字以内で入力してください")
     @Column(name = "description", nullable = false)
     private String description;
 
+    @NotBlank(message = "カテゴリは必須です")
+    @Size(max = 100, message = "カテゴリは100文字以内で入力してください")
     @Column(name = "category", nullable = false)
     private String category;
 
+    @NotNull(message = "金額は必須です")
+    @DecimalMin(value = "0.01", message = "金額は0より大きい値を入力してください")
+    @Digits(integer = 8, fraction = 2, message = "金額は整数部8桁、小数部2桁までです")
     @Column(name = "amount", nullable = false, precision = 10, scale = 2)
     private BigDecimal amount;
 
-    @Column(name = "type", nullable = false, length = 10) // 'INCOME' or 'EXPENSE'
+    @NotBlank(message = "収支種別は必須です")
+    @Pattern(regexp = "INCOME|EXPENSE", message = "収支種別は'INCOME'または'EXPENSE'である必要があります")
+    @Column(name = "type", nullable = false, length = 10)
     private String type;
-
-    // --- コンストラクタ ---
-    public Expense() {
-    }
-
-    public Expense(LocalDate transactionDate, String description, String category, BigDecimal amount, String type) {
-	this.transactionDate = transactionDate;
-	this.description = description;
-	this.category = category;
-	this.amount = amount;
-	this.type = type;
-    }
-
-    // --- GetterとSetter ---
-    public Long getId() {
-	return id;
-    }
-
-    public void setId(Long id) {
-	this.id = id;
-    }
-
-    public LocalDate getTransactionDate() {
-	return transactionDate;
-    }
-
-    public void setTransactionDate(LocalDate transactionDate) {
-	this.transactionDate = transactionDate;
-    }
-
-    public String getDescription() {
-	return description;
-    }
-
-    public void setDescription(String description) {
-	this.description = description;
-    }
-
-    public String getCategory() {
-	return category;
-    }
-
-    public void setCategory(String category) {
-	this.category = category;
-    }
-
-    public BigDecimal getAmount() {
-	return amount;
-    }
-
-    public void setAmount(BigDecimal amount) {
-	this.amount = amount;
-    }
-
-    public String getType() {
-	return type;
-    }
-
-    public void setType(String type) {
-	this.type = type;
-    }
-
-    @Override
-    public String toString() {
-	return "Expense{" + "id=" + id + ", transactionDate=" + transactionDate + ", description='" + description + '\''
-		+ ", category='" + category + '\'' + ", amount=" + amount + ", type='" + type + '\'' + '}';
-    }
 }

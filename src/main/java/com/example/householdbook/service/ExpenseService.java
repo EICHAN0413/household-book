@@ -9,15 +9,18 @@ import org.springframework.transaction.annotation.Transactional;
 import com.example.householdbook.entity.Expense;
 import com.example.householdbook.repository.ExpenseRepository;
 
+import lombok.RequiredArgsConstructor; // finalフィールドのコンストラクタを生成
+import lombok.extern.slf4j.Slf4j; // Loggerを自動生成
+
 @Service
-@Transactional // トランザクション管理
+@Transactional
+@Slf4j // Logger log; が自動生成される
+@RequiredArgsConstructor // finalフィールド（expenseRepository）のコンストラクタを自動生成
 public class ExpenseService {
 
-    private final ExpenseRepository expenseRepository;
+    private final ExpenseRepository expenseRepository; // final に変更
 
-    public ExpenseService(ExpenseRepository expenseRepository) {
-	this.expenseRepository = expenseRepository;
-    }
+    // @Autowired コンストラクタは不要になる (Lombokの@RequiredArgsConstructorが生成)
 
     /**
      * 全ての家計簿データを取得する
@@ -25,7 +28,10 @@ public class ExpenseService {
      * @return 家計簿データのリスト
      */
     public List<Expense> findAllExpenses() {
-	return expenseRepository.findAll();
+	log.debug("すべての家計簿データを検索中...");
+	List<Expense> expenses = expenseRepository.findAll();
+	log.debug("{}件の家計簿データが見つかりました。", expenses.size());
+	return expenses;
     }
 
     /**
@@ -35,7 +41,14 @@ public class ExpenseService {
      * @return Optional<Expense>
      */
     public Optional<Expense> findExpenseById(Long id) {
-	return expenseRepository.findById(id);
+	log.debug("該当の家計簿データを取得中");
+	Optional<Expense> expense = expenseRepository.findById(id);
+	if (expense.isPresent()) {
+	    log.debug("ID={} のデータが見つかりました: {}", id, expense.get());
+	} else {
+	    log.warn("ID={} のデータは存在しません", id);
+	}
+	return expense;
     }
 
     /**
@@ -45,7 +58,10 @@ public class ExpenseService {
      * @return 保存された家計簿データ
      */
     public Expense saveExpense(Expense expense) {
-	return expenseRepository.save(expense);
+	log.debug("家計簿データを保存中: {}", expense);
+	Expense savedExpense = expenseRepository.save(expense);
+	log.debug("保存完了: {}", savedExpense);
+	return savedExpense;
     }
 
     /**
@@ -56,13 +72,24 @@ public class ExpenseService {
      * @return 更新された家計簿データ (存在しない場合はOptional.empty())
      */
     public Optional<Expense> updateExpense(Long id, Expense updatedExpense) {
+	log.debug("ID={} の家計簿データを更新開始: {}", id, updatedExpense);
+
 	return expenseRepository.findById(id).map(expense -> {
+	    // 値の更新
 	    expense.setTransactionDate(updatedExpense.getTransactionDate());
 	    expense.setDescription(updatedExpense.getDescription());
 	    expense.setCategory(updatedExpense.getCategory());
 	    expense.setAmount(updatedExpense.getAmount());
 	    expense.setType(updatedExpense.getType());
-	    return expenseRepository.save(expense);
+
+	    Expense saved = expenseRepository.save(expense);
+
+	    log.debug("ID={} の更新完了: {}", id, saved);
+	    return saved;
+	}).or(() -> {
+	    // 対象データが存在しない場合
+	    log.warn("ID={} の家計簿データが存在せず、更新できませんでした。", id);
+	    return Optional.empty();
 	});
     }
 
@@ -72,6 +99,12 @@ public class ExpenseService {
      * @param id 削除対象の家計簿ID
      */
     public void deleteExpense(Long id) {
-	expenseRepository.deleteById(id);
+	log.debug("ID={} の家計簿データ削除処理を開始", id);
+	if (expenseRepository.existsById(id)) {
+	    expenseRepository.deleteById(id);
+	    log.debug("ID={} の家計簿データを削除しました", id);
+	} else {
+	    log.warn("ID={} のデータは存在せず削除できません", id);
+	}
     }
 }
