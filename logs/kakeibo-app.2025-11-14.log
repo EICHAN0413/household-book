@@ -1,0 +1,18 @@
+2025-11-14 14:17:12.305 INFO  c.e.h.HouseholdBookApplication - Starting HouseholdBookApplication using Java 17.0.10 with PID 2735 (/Applications/Eclipse_2023-12.app/Contents/workspace/household-book/target/classes started by hidekiikeda in /Applications/Eclipse_2023-12.app/Contents/workspace/household-book)
+2025-11-14 14:17:12.305 INFO  c.e.h.HouseholdBookApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-14 14:17:12.473 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-14 14:17:12.473 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14 14:17:12.480 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-14 14:17:12.509 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-27 - Starting...
+2025-11-14 14:17:12.595 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-27 - Added connection oracle.jdbc.driver.T4CConnection@1edd8512
+2025-11-14 14:17:12.595 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-27 - Start completed.
+2025-11-14 14:17:12.602 WARN  org.hibernate.orm.deprecation - HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14 14:17:29.408 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14 14:17:29.452 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-11-14 14:17:29.495 INFO  c.e.h.HouseholdBookApplication - Started HouseholdBookApplication in 17.208 seconds (process running for 8964.309)
+2025-11-14 15:29:14.012 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-27 - Thread starvation or clock leap detected (housekeeper delta=15m776ms).
+2025-11-14 17:30:18.563 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-27 - Thread starvation or clock leap detected (housekeeper delta=2h25s302ms).
+2025-11-14 19:32:18.526 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-27 - Thread starvation or clock leap detected (housekeeper delta=2h1m59s963ms).
+2025-11-14 21:34:26.187 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-27 - Thread starvation or clock leap detected (housekeeper delta=2h2m7s369ms).
+2025-11-14 22:35:32.401 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-27 - Thread starvation or clock leap detected (housekeeper delta=1h1m6s480ms).
+2025-11-14 23:36:39.210 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-27 - Thread starvation or clock leap detected (housekeeper delta=1h1m6s485ms).

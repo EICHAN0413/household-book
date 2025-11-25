@@ -1,0 +1,19 @@
+services:
+  oracle:
+    image: gvenzl/oracle-free:latest
+    container_name: household-oracle
+    ports:
+      - "1521:1521"
+    environment:
+      - ORACLE_CHARACTERSET=AL32UTF8
+      - TZ=Asia/Tokyo
+      - ORACLE_PASSWORD=22493629
+      # 自動作成の設定（これが確実に動くようになります）
+      - APP_USER=household_user
+      - APP_USER_PASSWORD=Oracle12345
+    volumes:
+      # Docker内部のボリュームを使う設定
+      - oracle_db_volume:/opt/oracle/oradata
+
+volumes:
+  oracle_db_volume:
