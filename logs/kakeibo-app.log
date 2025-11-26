@@ -292,3 +292,391 @@ Caused by: java.lang.ClassNotFoundException: ExpenseRepository
 2025-11-14 14:04:02.590 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2025-11-14 14:04:02.633 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
 2025-11-14 14:04:02.676 INFO  c.e.h.HouseholdBookApplication - Started HouseholdBookApplication in 16.988 seconds (process running for 8157.464)
+2025-11-26 09:00:32.521 INFO  c.e.h.HouseholdBookApplication - Starting HouseholdBookApplication using Java 17.0.10 with PID 30057 (/Users/hidekiikeda/workspace/household-book/target/classes started by hidekiikeda in /Users/hidekiikeda/workspace/household-book)
+2025-11-26 09:00:32.521 INFO  c.e.h.HouseholdBookApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-26 09:00:33.293 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-26 09:00:33.293 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-26 09:00:33.304 INFO  o.a.c.c.C.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-26 09:00:33.472 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Starting...
+2025-11-26 09:00:33.544 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-20 - Added connection oracle.jdbc.driver.T4CConnection@22dd4e31
+2025-11-26 09:00:33.544 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Start completed.
+2025-11-26 09:00:33.551 WARN  org.hibernate.orm.deprecation - HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-26 09:00:33.752 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-26 09:00:34.036 INFO  c.e.h.HouseholdBookApplication - Started HouseholdBookApplication in 1.534 seconds (process running for 21099.041)
+2025-11-26 09:00:43.235 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Shutdown initiated...
+2025-11-26 09:00:43.318 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Shutdown completed.
+2025-11-26 09:00:43.420 INFO  c.e.h.HouseholdBookApplication - Starting HouseholdBookApplication using Java 17.0.10 with PID 30057 (/Users/hidekiikeda/workspace/household-book/target/classes started by hidekiikeda in /Users/hidekiikeda/workspace/household-book)
+2025-11-26 09:00:43.420 INFO  c.e.h.HouseholdBookApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-26 09:00:43.848 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-26 09:00:43.848 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-26 09:00:43.860 INFO  o.a.c.c.C.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-26 09:00:43.948 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-21 - Starting...
+2025-11-26 09:00:44.121 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-21 - Added connection oracle.jdbc.driver.T4CConnection@57472e78
+2025-11-26 09:00:44.121 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-21 - Start completed.
+2025-11-26 09:00:44.131 WARN  org.hibernate.orm.deprecation - HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-26 09:00:44.421 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-26 09:00:44.560 INFO  c.e.h.HouseholdBookApplication - Started HouseholdBookApplication in 1.168 seconds (process running for 21109.564)
+2025-11-26 09:00:45.948 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-21 - Shutdown initiated...
+2025-11-26 09:00:46.077 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-21 - Shutdown completed.
+2025-11-26 09:00:46.181 INFO  c.e.h.HouseholdBookApplication - Starting HouseholdBookApplication using Java 17.0.10 with PID 30057 (/Users/hidekiikeda/workspace/household-book/target/classes started by hidekiikeda in /Users/hidekiikeda/workspace/household-book)
+2025-11-26 09:00:46.181 INFO  c.e.h.HouseholdBookApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-26 09:00:46.510 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-26 09:00:46.511 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-26 09:00:46.523 INFO  o.a.c.c.C.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-26 09:00:46.589 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-22 - Starting...
+2025-11-26 09:00:47.605 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 12505, SQLState: 66000
+2025-11-26 09:00:47.605 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=Mh0OmABER6iuzQkQvHiieA==)
+https://docs.oracle.com/error-help/db/ora-12505/
+2025-11-26 09:00:47.605 WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.GenericJDBCException: unable to obtain isolated JDBC connection [ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=Mh0OmABER6iuzQkQvHiieA==)
+https://docs.oracle.com/error-help/db/ora-12505/] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:334)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.example.householdbook.HouseholdBookApplication.main(HouseholdBookApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.sql.SQLException: ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=Mh0OmABER6iuzQkQvHiieA==)
+https://docs.oracle.com/error-help/db/ora-12505/
+	at oracle.jdbc.driver.T4CConnection.handleLogonNetException(T4CConnection.java:1853)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:1204)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1189)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:106)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:887)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:694)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	... 40 common frames omitted
+Caused by: oracle.net.ns.NetException: ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=Mh0OmABER6iuzQkQvHiieA==)
+https://docs.oracle.com/error-help/db/ora-12505/
+	at oracle.net.ns.NSProtocolNIO.createRefusePacketException(NSProtocolNIO.java:919)
+	at oracle.net.ns.NSProtocolNIO.handleConnectPacketResponse(NSProtocolNIO.java:462)
+	at oracle.net.ns.NSProtocolNIO.negotiateConnection(NSProtocolNIO.java:270)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:353)
+	at oracle.jdbc.driver.T4CConnection.connectNetworkSessionProtocol(T4CConnection.java:3684)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:1083)
+	... 54 common frames omitted
+2025-11-26 09:00:47.606 WARN  org.hibernate.orm.deprecation - HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-26 09:00:47.701 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-22 - Starting...
+2025-11-26 09:00:48.714 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 12505, SQLState: 66000
+2025-11-26 09:00:48.714 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=9w9uttsMTQqOqdv6BzxAUA==)
+https://docs.oracle.com/error-help/db/ora-12505/
+2025-11-26 09:00:48.715 ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=9w9uttsMTQqOqdv6BzxAUA==)
+https://docs.oracle.com/error-help/db/ora-12505/] [n/a]
+2025-11-26 09:00:48.715 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=9w9uttsMTQqOqdv6BzxAUA==)
+https://docs.oracle.com/error-help/db/ora-12505/] [n/a]
+2025-11-26 09:00:48.715 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-11-26 09:00:48.727 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=9w9uttsMTQqOqdv6BzxAUA==)
+https://docs.oracle.com/error-help/db/ora-12505/] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.example.householdbook.HouseholdBookApplication.main(HouseholdBookApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=9w9uttsMTQqOqdv6BzxAUA==)
+https://docs.oracle.com/error-help/db/ora-12505/] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
+	... 20 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=9w9uttsMTQqOqdv6BzxAUA==)
+https://docs.oracle.com/error-help/db/ora-12505/] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:43)
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:39)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60)
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:185)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:93)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	... 24 common frames omitted
+Caused by: java.sql.SQLException: ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=9w9uttsMTQqOqdv6BzxAUA==)
+https://docs.oracle.com/error-help/db/ora-12505/
+	at oracle.jdbc.driver.T4CConnection.handleLogonNetException(T4CConnection.java:1853)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:1204)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1189)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:106)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:887)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:694)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	... 44 common frames omitted
+Caused by: oracle.net.ns.NetException: ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=9w9uttsMTQqOqdv6BzxAUA==)
+https://docs.oracle.com/error-help/db/ora-12505/
+	at oracle.net.ns.NSProtocolNIO.createRefusePacketException(NSProtocolNIO.java:919)
+	at oracle.net.ns.NSProtocolNIO.handleConnectPacketResponse(NSProtocolNIO.java:462)
+	at oracle.net.ns.NSProtocolNIO.negotiateConnection(NSProtocolNIO.java:270)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:353)
+	at oracle.jdbc.driver.T4CConnection.connectNetworkSessionProtocol(T4CConnection.java:3684)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:1083)
+	... 58 common frames omitted
+2025-11-26 09:00:51.173 INFO  c.e.h.HouseholdBookApplication - Starting HouseholdBookApplication using Java 17.0.10 with PID 30057 (/Users/hidekiikeda/workspace/household-book/target/classes started by hidekiikeda in /Users/hidekiikeda/workspace/household-book)
+2025-11-26 09:00:51.173 INFO  c.e.h.HouseholdBookApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-26 09:00:51.408 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-26 09:00:51.408 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-26 09:00:51.422 INFO  o.a.c.c.C.[Tomcat-8].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-26 09:00:51.458 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-23 - Starting...
+2025-11-26 09:00:52.480 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 12505, SQLState: 66000
+2025-11-26 09:00:52.480 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=+E223Hv6RQ2NYQ+bvnJMLg==)
+https://docs.oracle.com/error-help/db/ora-12505/
+2025-11-26 09:00:52.480 WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.GenericJDBCException: unable to obtain isolated JDBC connection [ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=+E223Hv6RQ2NYQ+bvnJMLg==)
+https://docs.oracle.com/error-help/db/ora-12505/] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:334)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.example.householdbook.HouseholdBookApplication.main(HouseholdBookApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.sql.SQLException: ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=+E223Hv6RQ2NYQ+bvnJMLg==)
+https://docs.oracle.com/error-help/db/ora-12505/
+	at oracle.jdbc.driver.T4CConnection.handleLogonNetException(T4CConnection.java:1853)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:1204)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1189)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:106)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:887)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:694)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	... 40 common frames omitted
+Caused by: oracle.net.ns.NetException: ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=+E223Hv6RQ2NYQ+bvnJMLg==)
+https://docs.oracle.com/error-help/db/ora-12505/
+	at oracle.net.ns.NSProtocolNIO.createRefusePacketException(NSProtocolNIO.java:919)
+	at oracle.net.ns.NSProtocolNIO.handleConnectPacketResponse(NSProtocolNIO.java:462)
+	at oracle.net.ns.NSProtocolNIO.negotiateConnection(NSProtocolNIO.java:270)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:353)
+	at oracle.jdbc.driver.T4CConnection.connectNetworkSessionProtocol(T4CConnection.java:3684)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:1083)
+	... 54 common frames omitted
+2025-11-26 09:00:52.482 WARN  org.hibernate.orm.deprecation - HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-26 09:00:52.516 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-23 - Starting...
+2025-11-26 09:00:53.524 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 12505, SQLState: 66000
+2025-11-26 09:00:53.524 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=XaerVttRRDeDfO/YnBm3uA==)
+https://docs.oracle.com/error-help/db/ora-12505/
+2025-11-26 09:00:53.525 ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=XaerVttRRDeDfO/YnBm3uA==)
+https://docs.oracle.com/error-help/db/ora-12505/] [n/a]
+2025-11-26 09:00:53.525 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=XaerVttRRDeDfO/YnBm3uA==)
+https://docs.oracle.com/error-help/db/ora-12505/] [n/a]
+2025-11-26 09:00:53.525 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-11-26 09:00:53.533 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=XaerVttRRDeDfO/YnBm3uA==)
+https://docs.oracle.com/error-help/db/ora-12505/] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.example.householdbook.HouseholdBookApplication.main(HouseholdBookApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=XaerVttRRDeDfO/YnBm3uA==)
+https://docs.oracle.com/error-help/db/ora-12505/] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
+	... 20 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=XaerVttRRDeDfO/YnBm3uA==)
+https://docs.oracle.com/error-help/db/ora-12505/] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:43)
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:39)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60)
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:185)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:93)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	... 24 common frames omitted
+Caused by: java.sql.SQLException: ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=XaerVttRRDeDfO/YnBm3uA==)
+https://docs.oracle.com/error-help/db/ora-12505/
+	at oracle.jdbc.driver.T4CConnection.handleLogonNetException(T4CConnection.java:1853)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:1204)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1189)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:106)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:887)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:694)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	... 44 common frames omitted
+Caused by: oracle.net.ns.NetException: ORA-12505: データベースに接続できません。SID ORCLCDBは、host localhost port 1521のリスナーに登録されていません。 (CONNECTION_ID=XaerVttRRDeDfO/YnBm3uA==)
+https://docs.oracle.com/error-help/db/ora-12505/
+	at oracle.net.ns.NSProtocolNIO.createRefusePacketException(NSProtocolNIO.java:919)
+	at oracle.net.ns.NSProtocolNIO.handleConnectPacketResponse(NSProtocolNIO.java:462)
+	at oracle.net.ns.NSProtocolNIO.negotiateConnection(NSProtocolNIO.java:270)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:353)
+	at oracle.jdbc.driver.T4CConnection.connectNetworkSessionProtocol(T4CConnection.java:3684)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:1083)
+	... 58 common frames omitted
