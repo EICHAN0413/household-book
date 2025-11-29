@@ -7,6 +7,8 @@ import TransactionForm from './pages/TransactionForm';
 import Settings from './pages/Settings';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import ForgotPassword from './pages/ForgotPassword';
+import ResetPassword from './pages/ResetPassword';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
@@ -25,6 +27,23 @@ const RequireAuth: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 	return <>{children}</>; // ReactNodeの場合、フラグメント <>...</> で囲むのが安全です
   };
 
+  const PublicOnly: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+	const { isAuthenticated, isLoading } = useAuth();
+  
+	// 認証チェック中はローディングを表示（チラつき防止）
+	if (isLoading) {
+	  return <Box sx={{ display: 'flex', justifyContent: 'center', mt: 10 }}><CircularProgress /></Box>;
+	}
+  
+	// ログイン済みならホームへ飛ばす
+	if (isAuthenticated) {
+	  return <Navigate to="/" replace />;
+	}
+  
+	// 未ログインならそのまま表示
+	return <>{children}</>;
+  };
+
 // ナビゲーションバー
 const NavBar: React.FC = () => {
   const { isAuthenticated, logout } = useAuth();
@@ -38,7 +57,7 @@ const NavBar: React.FC = () => {
   return (
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1, textDecoration: 'none', color: 'inherit' }} component={Link} to="/">
+        <Typography variant="h6" sx={{ flexGrow: 1, textDecoration: 'none', color: 'inherit' }} component={Link} to="/home">
           家計簿アプリ
         </Typography>
         {isAuthenticated ? (
@@ -64,10 +83,13 @@ function AppContent() {
       <Box component="main" sx={{ flexGrow: 1, bgcolor: '#f7f7f7', pb: 4 }}>
         <Routes>
           {/* 公開ルート */}
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<PublicOnly><Login /></PublicOnly>} />
+          <Route path="/register" element={<PublicOnly><Register /></PublicOnly>} />
+          <Route path="/forgot-password" element={<PublicOnly><ForgotPassword /></PublicOnly>} />
+          <Route path="/reset-password" element={<PublicOnly><ResetPassword /></PublicOnly>} />
+          
 
-          {/* ▼▼▼ 保護されたルート  */}
+          {/* 保護されたルート  */}
           <Route path="/" element={<RequireAuth><Home /></RequireAuth>} />
           <Route path="/home" element={<RequireAuth><Home /></RequireAuth>} />
           <Route path="/transactionList" element={<RequireAuth><TransactionList /></RequireAuth>} />

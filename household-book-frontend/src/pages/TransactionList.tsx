@@ -13,7 +13,7 @@ import { transactionApi } from '../services/api';
 import type { HouseholdTransaction } from '../types';
 
 // カテゴリ一覧
-const CATEGORIES = ['食費', '交通費', '光熱費', '通信費', '趣味・娯楽', '給与', 'その他収入', 'その他支出'];
+const CATEGORIES = ['食費', '交通費', '光熱費', '通信費', '交際費', '趣味・娯楽', '給与', 'その他収入', 'その他支出'];
 
 type Order = 'asc' | 'desc';
 

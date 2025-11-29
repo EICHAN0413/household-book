@@ -1,23 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'; 
 import { TextField, Button, Container, Typography, Box, Paper, Avatar, Alert } from '@mui/material';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link, useSearchParams } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 
 const Login: React.FC = () => {
   const navigate = useNavigate();
   const { login } = useAuth();
-  
+  const [searchParams] = useSearchParams();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [successMsg, setSuccessMsg] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const verified = searchParams.get('verified');
+    const errParam = searchParams.get('error');
+
+    if (verified === 'true') {
+      setSuccessMsg('メール認証が完了しました。ログインしてください。');
+    } else if (errParam === 'expired') {
+      setError('認証リンクの有効期限が切れています。再度登録を行ってください。');
+    } else if (errParam === 'invalid_token') {
+      setError('無効な認証リンクです。');
+    }
+  }, [searchParams]);
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     setError(null);
+    setSuccessMsg(null);
+
     try {
       await login(username, password);
-      navigate('/'); // ログイン成功したらホームへ
+      navigate('/'); 
     } catch (err) {
       console.error(err);
       setError('ログインに失敗しました。ユーザー名かパスワードが間違っています。');
@@ -34,7 +50,8 @@ const Login: React.FC = () => {
           ログイン
         </Typography>
         <Paper elevation={3} sx={{ p: 4, mt: 2, width: '100%', borderRadius: 2 }}>
-          {error && <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>}
+        {error && <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>}
+          {successMsg && <Alert severity="success" sx={{ mb: 2 }}>{successMsg}</Alert>}
           
           <Box component="form" onSubmit={handleSubmit} noValidate>
             <TextField
@@ -63,11 +80,14 @@ const Login: React.FC = () => {
             >
               ログイン
             </Button>
-            <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-              <Link to="/register" style={{ textDecoration: 'none', color: '#1976d2' }}>
-                アカウント作成はこちら
-              </Link>
-            </Box>
+            <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 2, width: '100%' }}>
+  <Link to="/forgot-password" style={{ textDecoration: 'none', color: '#1976d2', fontSize: '0.875rem' }}>
+    パスワードを忘れた方
+  </Link>
+  <Link to="/register" style={{ textDecoration: 'none', color: '#1976d2', fontSize: '0.875rem' }}>
+    アカウント作成
+  </Link>
+</Box>
           </Box>
         </Paper>
       </Box>

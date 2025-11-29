@@ -6,7 +6,7 @@ interface AuthContextType {
   isLoading: boolean;
   login: (username: string, password: string) => Promise<void>;
   logout: () => Promise<void>;
-  register: (username: string, password: string) => Promise<void>;
+  register: (username: string, password: string, email: string) => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -43,9 +43,8 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     }
   };
 
-  const register = async (username: string, password: string) => {
-    await authApi.register(username, password);
-    // 登録後は自動ログインせず、ログイン画面へ促すフローにするのが一般的
+  const register = async (username: string, password: string, email: string) => {
+    await authApi.register(username, password, email);
   };
 
   return (

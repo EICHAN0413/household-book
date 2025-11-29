@@ -9,7 +9,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { transactionApi } from '../services/api';
 import type { TransactionFormData } from '../types';
 
-const defaultCategories = ['食費', '交通費', '光熱費', '通信費', '趣味・娯楽', '給与', 'その他収入', 'その他支出'];
+const defaultCategories = ['食費', '交通費', '光熱費', '通信費', '交際費', '趣味・娯楽', '給与', 'その他収入', 'その他支出'];
 
 const TransactionForm: React.FC = () => {
 	const navigate = useNavigate();

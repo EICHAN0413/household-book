@@ -55,12 +55,24 @@ export const authApi = {
     },
   
     // 登録
-    register: async (username: string, password: string) => {
-      await client.post('/auth/register', { username, password });
-    },
+    register: async (username: string, password: string, email: string) => {
+        // BackendのUserエンティティに合わせてJSONを送信
+        await client.post('/auth/register', { username, password, email });
+      },
   
     // 認証チェック
     checkStatus: async () => {
       await client.get('/auth/status');
-    }
+    },
+
+    // パスワード忘れ
+    forgotPassword: async (email: string) => {
+        await client.post('/auth/password/forgot', { email });
+      },
+    
+    
+    // パスワードリセット
+    resetPassword: async (token: string, password: string) => {
+        await client.post('/auth/password/reset', { token, password });
+      }
   };
